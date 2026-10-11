@@ -3,30 +3,30 @@
 **Nom Prénom** : Malak Ben Slim
 **Matière** : Développement d'applications réparties, LSI 3
 
-##### Activité 1-1: Première connexion Client/Serveur
+## Activité 1-1: Première connexion Client/Serveur
 ![Classe Client](images/act1-classe-client.png)
 ![Classe Serveur](images/act1-classe-serveur.png)
 
-## Étape 1: Vérification de Git
+### Étape 1: Vérification de Git
 Commande: `git --version`
 ![Version de Git](images/act1-git-version.png)
 
 Description: Git est bien installé sur ma machine, la version est 2.55.0.windows.5
 
-## Étape 2 : Vérification de Java
+### Étape 2 : Vérification de Java
 Commande : `java --version`
 ![Version de Java](images/act1-java-version.png)
 
 Description: Le JDK installé est en version 25.0.2 .
 
-## Étape 3 : Création du serveur
+### Étape 3 : Création du serveur
 Le package `serverPackage` contient la classe `Server` qui crée un `ServerSocket` sur le port 1234 et attend un client avec `accept()`.
 
 ![Serveur en attente](images/act1-serveur-attente.png)
 
 Interprétation: le serveur affiche "Je suis un serveur en attente..." puis reste bloqué sur `accept()` tant qu'aucun client ne se connecte.
 
-## Étape 4 : Création du client
+### Étape 4 : Création du client
 Le package `clientPackage` contient la classe `Client` qui se connecte au serveur avec `new Socket("localhost", 1234)`.
 
 ![Client connecté](images/act1-client-connecte.png)
@@ -38,7 +38,7 @@ Interprétation : le client affiche d'abord "pas encore connecté", puis "je sui
 Interprétation : côté serveur, "un client est connecté" apparaît au moment où `accept()` se débloque.
 
 
-##### Activité 1-2 : Service de calculatrice
+## Activité 1-2 : Service de calculatrice
 ![Classe Client](images/act2-classe-client.png)
 ![Classe Serveur](images/act2-classe-serveur.png)
 
@@ -83,7 +83,7 @@ Je n'ai pas écrit `socket.close()` : les sockets et les flux sont déclarés da
 - Le serveur doit toujours être lancé avant le client. Sinon, le client affiche `ConnectException: Connection refused`, car aucun `ServerSocket` n'écoute sur le port 1234.
 
 
-##### Activité 1-3 : Amélioration sur le service de calculatrice 
+## Activité 1-3 : Amélioration sur le service de calculatrice 
 
 ### Étape 1 : Connexion avec l'adresse IP réelle
 
