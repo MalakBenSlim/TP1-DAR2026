@@ -3,9 +3,10 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class Client {
+public class Client13 {
     private static final String IP_SERVEUR= "192.168.1.108";
     private static final int PORT=1234;
+
     public static void main (String[] args) throws IOException{
         try(
             Socket socket = new Socket();
